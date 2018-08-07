@@ -5,6 +5,14 @@ $(function(){
 		},function(){
 			$(this).children(".shopdetail").slideUp(200);
 		})
+		//getCookie()
+		let str=getCookie("username");
+		if(str.length>0){
+			$(".username").text(str);
+			$(".login").hide();
+			$(".register").hide();
+		}
+		
 //		二维码分享
 		$(".share").hover(function(){
 			$(this).children(".ewm").fadeIn(400);

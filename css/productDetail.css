@@ -382,6 +382,11 @@ a{
 .share .share_a1 {
 	float:left;
 }
+.share .share_a1 i{
+	font-size: 15px;
+	margin-right:5px;
+	vertical-align: middle;
+}
 .share .share_div{
 	float: right;
 }
@@ -504,12 +509,12 @@ a{
     position:relative;
 }
 .gusslike .like_list ul li .gus_pro_pri:before{
-	font-size: 15px;
+	font-size: 13px;
     content: '￥';
     position: absolute;
     font-size: 18px;
     left: 0px;
-    top: 0px;
+    top: 2px;
 }
 .gusslike .like_list ul li .gus_pro_img img{
 	max-width: 100%;
@@ -622,7 +627,7 @@ a{
 	float:left;
 	font-size: 14px;
     margin-right: 5px;
-    
+    cursor: pointer;
 }
 .nav-wrap .navFix{
 	position: fixed;
@@ -632,7 +637,7 @@ a{
 	border-bottom:1px solid #e3e3e3\9;
 	z-index: 99999;
 }
-.nav-height .nav-wrap ul li a{
+.nav-height .nav-wrap ul li b{
 	color: #555c67;
     border: 1px solid white;
     display: block;
@@ -754,3 +759,186 @@ a{
  	display:inline-block;
  	width:20px;
  }   
+ 
+ #section3{
+	font-size: 14px;
+	color:#666;
+	
+}
+ #section3 .pro_para_tit{
+	background-position: 110px -146px;;
+}
+ #section3 .comment_list{
+ 	padding: 10px 10px 10px 10px;
+    line-height: 24px;
+ }
+ table{
+ 	border-collapse: collapse;
+    border-spacing: 0;
+ }
+.pro_score{
+	margin-top:20px;
+	width:100%;
+	line-height:24px;
+}
+.pro_score td{
+	padding:15px 10px;
+	display: inline-block;
+}
+
+.koubeipoint {
+    font-size: 24px;
+    line-height: 40px;
+    padding-left: 45px;
+    display: inline;
+}
+.red{
+    color: #db3f7e;
+}
+.koubeipoint b{
+	font-weight:600;
+	font-size:36px;
+}
+.pro_score .score_total{
+	padding-left: 40px;
+}
+.pro_score .score_total .values{
+	width:150px;
+	float:left;
+}
+.pro_score .score_total .values .stars{
+	width:150px;
+	position: relative;
+    font-size: 15px;
+    line-height: 1.6;
+    letter-spacing: 1px;
+    display: inline-block;
+    margin-bottom:10px;
+    margin-left:40px;
+}
+.f20{
+	line-height:30px;
+	
+}
+.stars .above{
+	color:#ddd;
+	display: inline-block;
+}
+.stars .below{
+	width:100%;
+	position: absolute;
+    left: 0;
+    color: #c29b60;
+    overflow: hidden;
+}
+.iconfont{
+	font-size:22px;
+	margin-right: -6px;
+}
+.pj_num{
+	width:100%;
+	padding-left: 55px;
+    margin-top: -20px;
+    font-size: 12px;
+    color:#333333;
+}
+.user{
+	width:100%;
+	font-size: 14px;
+	color:#333;
+	overflow: hidden;
+	margin-top:50px;
+	margin-bottom: 40px;
+}
+.user_left{
+	width: 145px;
+    float: left;
+    text-align: center;
+    margin-left:20px;
+    margin-right: 25px;
+}
+.user_left p{
+	font-size: 14px;
+	color:#888;
+	text-align: center;
+	line-height:1.4;
+	word-wrap: break-word;
+}
+.user_left .zhanghao{
+	color:#000;
+	font-size: 14px;
+}
+.user_right{
+	position: relative;
+    width: 575px;
+    float:left;
+    padding: 20px 24px;
+    background-color: #f2f2f2;
+    border-radius: 2px;
+    -webkit-border-radius: 2px;
+}
+.user_right .sanjiao{
+	width:0;
+	height:0;
+	border:10px solid transparent;
+	border-right-color: #F2F2F2;
+	position: absolute;
+	left:-20px;
+	top:30px;
+}
+.user_right .description{
+	
+}
+.user_right .description p{
+	color: #575e68;
+	font-size: 15px;
+}
+.user_right .description .pj_words{
+	padding-top:15px;
+	padding-bottom: 40px;
+	box-sizing: border-box;
+}
+.user_right .description p:last-child{
+    font-size: 14px;
+    color: #bebebe;
+    /*clear: both;*/
+    line-height: 40px;
+    
+}
+.user_right .description .des_tit{
+	overflow: hidden;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #ec3e7d;
+}
+.description .des_tit span{
+	display: inline-block;
+}
+.description .des_tit .tit_l{
+	float: left;
+    margin-right: 20px;
+    color: #ec3e7d;
+    font-size: 18px;
+    width: 40%;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+.description .des_tit .xx{
+	position:relative;
+	width:150px;
+}
+.description .des_tit .xx .f20{
+	position:absolute;
+	left: 36px;
+	top:-5px;
+}
+.description .des_tit .xx .f20 i{
+	font-size: 16px;
+	margin-right: -4px;
+}
+.description .des_tit .xx .below{
+	color:#ddd;
+}
+.description .des_tit .xx .above{
+	color: #c29b60;
+}

@@ -1,0 +1,13 @@
+a{
+	font-size: 12px;
+}
+.public{
+	width: 100%;
+}
+.public_header{
+	/*overflow: hidden;*/
+}
+.bigbox{
+	width: 1200px;
+	margin:0 auto;
+}

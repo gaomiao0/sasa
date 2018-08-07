@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>register</title>
+<link rel="stylesheet" type="text/css" href="css/register.css" />
+</head>
+<body>
+<!--官网logo-->
+<div class="topbar">
+	<div class="bigbox">
+		<a class="sasa_con" href="homepage.html"><img src="imgs/de63e200c54345ad02ff3d6de8ce4eb97fafdf87.png"/></a>
+	</div>
+</div>
+<!--内容-->
+<div class="content">
+	<div class="bigbox register">
+		<div class="banner">
+			<img src="imgs/cecc204b4820bd74bf72910e6ba440fae2b83342.jpg" alt="" />
+		</div>
+		<div class="reg_form">
+			<div class="form_inner">
+				<div class="single_tit">
+					<h1>注册账号</h1>
+					<p>
+						<span>已有莎莎账号？</span>
+						<a href="login.html">立即登录</a>
+					</p>
+				</div>
+				<div class="signupbox">
+					<form action="" method="post">
+						<ul>
+							<li>
+								<input id="username" type="text" placeholder="请输入邮箱或手机号码"/>
+								<p>
+									<b>!</b>
+									<span class="i-name">请输入邮箱或手机号码</span>
+								</p>
+							</li>
+							<li class="passinfo">
+								<input id="userpass" type="password" placeholder="请输入密码6-16位字母和数字的组合"/>
+								<p>
+									<b>!</b>
+									<span class="i-pass">请输入密码</span>
+								</p>
+								<span class="strength">
+									<em class="poor">差</em>
+									<em class="weak">弱</em>
+									<em class="good">中</em>
+									<em class="strong">强</em>
+								</span>
+							</li>
+							<li>
+								<input id="qrpass" type="password" placeholder="再次填写密码"/>
+								<p>
+									<b>!</b>
+									<span class="i-qrpass">请输入确认密码</span>
+								</p>
+							</li>
+							<li class="yanzheng">
+								<input id="yzimg" type="text" placeholder="填写验证码"/>
+								<img id="imgsj" src="imgs/index-gen_vcode-LOGINVCODE-4 (1).png" alt="" />
+								<span id="changema">看不清？换一张</span>
+								<p>
+									<b>!</b>
+									<span class="i-yz">请填写验证码</span>
+								</p>
+							</li>
+							<li class="qianti">
+								<input type="checkbox" />
+								<span>
+									你已阅读及接受
+									<a href="">使用条款</a>及
+									<a href="">隐私政策</a>
+									<span><b>!</b>请选择同意</span>
+								</span>
+							</li>
+							<li class="qianti">
+								<input type="checkbox" />
+								<span>我不同意莎莎使用我的个人资料做直接促销</span>
+							</li>
+							<li>
+								<input type="button" id="btnsubmit" class="reg_btn" value="注册">
+							</li>
+						</ul>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+</body>
+</html>
+<script type="text/javascript" src="js/jquery-1.11.3.js"></script>
+<script type="text/javascript" src="js/register.js"></script>

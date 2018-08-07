@@ -268,9 +268,9 @@ VIP单笔消费满599，系统自动返赠一张<999-100>优惠券。使用有�
 				<div class="nav-wrap" id="nav-wrap">
 					<div class="nav-mobile">Click</div>
 					<ul class="clearfix">
-						<li><a>商品参数</a></li>
-						<li><a>商品详情</a></li>
-						<li><a>用户评价</a></li>
+						<li><b>商品参数</b></li>
+						<li><b>商品详情</b></li>
+						<li><b>用户评价</b></li>
 					</ul>
 				</div>
 				<div class="tag_right">
@@ -332,7 +332,80 @@ VIP单笔消费满599，系统自动返赠一张<999-100>优惠券。使用有�
 		 		</div>
 		 	</div>
 		 	<div id="section3" class="section-content">
-			   3
+			   <div class="pro_para_tit">  &nbsp;用户评价</div>
+		 		<div class="pro_eval">
+		 			<div class="comment_list">
+		 				<table border="0" cellpadding="0" cellspacing="0" class="pro_score" style="margin-top:20px;">
+		 					<tbody>
+		 						<tr>
+		 							<td width="130">
+		 								<p class="koubeipoint red">
+		 									<b>5.0</b>
+		 									/5
+		 								</p>
+		 							</td>
+		 							<td width="130" class="score_total" style="padding-left:0;">
+		 								<span class="values">
+		 									<em class="stars stars_50">
+		 										<span class='below f20'>
+		 											<i class="iconfont icon-xingxing"></i>
+		 											<i class="iconfont icon-xingxing"></i>
+		 											<i class="iconfont icon-xingxing"></i>
+		 											<i class="iconfont icon-xingxing"></i>
+		 											<i class="iconfont icon-xingxing"></i>
+		 										</span>
+		 										<span class="above f20">
+		 											<i class="iconfont icon-xingxing"></i>
+		 											<i class="iconfont icon-xingxing"></i>
+		 											<i class="iconfont icon-xingxing"></i>
+		 											<i class="iconfont icon-xingxing"></i>
+		 											<i class="iconfont icon-xingxing"></i>
+		 										</span>
+		 									</em>
+		 								</span>
+		 							</td>
+		 						</tr>
+		 					</tbody>
+		 				</table>
+		 				<div class="pj_num"><b>1</b>条评价</div>
+		 				<div class="user">
+		 					<div class="user_left">
+		 						<div class="user_img"><img src="imgs/touxiang.bmp" alt="" /></div>
+		 						<p class="zhanghao">VIP<br>
+											729947369@qq.com</p>
+		 						<p>混合性偏干皮肤</p>
+		 					</div>
+		 					<div class="user_right">
+		 						<div class="sanjiao"></div>
+		 						<div class="description">
+		 							<div class="des_tit">
+		 								<span class="tit_l">第一次买</span>
+		 								<span class="xx">
+		 									评分&nbsp;&nbsp;
+		 									<span class='below f20'>
+	 											<i class="iconfont icon-xingxing"></i>
+	 											<i class="iconfont icon-xingxing"></i>
+	 											<i class="iconfont icon-xingxing"></i>
+	 											<i class="iconfont icon-xingxing"></i>
+	 											<i class="iconfont icon-xingxing"></i>
+	 										</span>
+	 										<span class="above f20">
+	 											<i class="iconfont icon-xingxing"></i>
+	 											<i class="iconfont icon-xingxing"></i>
+	 											<i class="iconfont icon-xingxing"></i>
+	 											<i class="iconfont icon-xingxing"></i>
+	 											<i class="iconfont icon-xingxing"></i>
+	 										</span>
+		 								</span>
+		 							</div>
+		 							<p class="pj_words">			与描述相符  日期挺新鲜的，天气变凉了开始用吧          </p>
+		 							<p>2018年07月21日</p>
+		 						</div>
+		 						
+		 					</div>
+		 				</div>
+		 			</div>
+		 		</div>
 		 	</div>
 		</div>
 		
@@ -388,11 +461,11 @@ $(function(){
 	$(".public_cb").load("public-cb.html")
 	$(".left_album").load("bigmirror.html")
 	
-//	$(".nav_left").hover(function(){
-//		$(".detail_nav").css({"display":"block"})
-//	},function(){
-//		$(".detail_nav").css({"display":"none"})
-//	})
+	$(".nav_left").hover(function(){
+		$(".detail_nav").css({"display":"block"})
+	},function(){
+		$(".detail_nav").css({"display":"none"})
+	})
 //	优惠
 	$(".pro_act div span").hover(function(){
 		$(this).children(".s").css({
@@ -430,5 +503,13 @@ $(function(){
           $('.nav-height').css({'position':'relative',"top":'0'})
         }
      })*/
+//  信息点击导航
+	$(".clearfix li").click(function(){
+		let w = $(this).width()
+		let index=$(this).index()
+		$(".nav_line").animate({
+			"left":w*index+10+"px"
+		},200)
+	})
 })
 </script>

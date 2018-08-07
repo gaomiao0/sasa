@@ -115,7 +115,7 @@
 
       for (i = 0; l > i; i++) {
         var item = scrollItems[i];
-        if (scrollPos > (item.offset().top-60)) {
+        if (scrollPos > (item.offset.top-60)) {
           navItem.removeClass('active');
           $(navItem[i]).addClass('active');
         }
