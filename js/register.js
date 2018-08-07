@@ -77,7 +77,7 @@ $(function(){
 		}
 	})
 	$("#userpass").keyup(function(){		
-		if($(this).val().length >=1){
+//		if($(this).val().length >=1){
 			$(".strength").fadeIn();
 			if(checkAll("password",$("#userpass").val())){
 				$(".weak").css({"z-index":"0"});
@@ -106,7 +106,7 @@ $(function(){
 				$(".poor").css({"z-index":"0"});
 				$(".weak").css({"z-index":"0"});
 			}
-		}
+//		}
 		
 	});
 	
@@ -150,10 +150,10 @@ function checkAll(type,value){
 	var reg = null;
 	switch(type){
 		case "username":reg = /^\w{5,20}$/;break;
-		case "password":reg = /^\d{6,8}$/;break;
-		case "pass-weak":reg=/^\d{9,12}$/;break;
-		case "pass-good":reg=/^\w{12,16}$/;break;
-		case "pass-strong":reg=/^[a-zA-z]\w{10,20}$/;break;
+		case "password":reg = /^\d{1,6}$/;break;
+		case "pass-weak":reg=/^\d{6,10}$/;break;
+		case "pass-good":reg=/^\w{10,15}$/;break; 
+		case "pass-strong":reg=/^[a-zA-z]\w{15,20}$/;break;
 		case "email":reg = /^\w+@[a-zA-Z0-9]+\.(com|cn|net|top|vip)$/;break;
 		case "phoneNumber":reg = /^1[^0126]\d{9}$/;break;
 		case "personId":reg = /^[1-9]\d{5}(19|20)\d{2}(0[1-9]|1[0-2])(0[1-9]|1[0-9]|2[0-9]|3[0-1])\d{3}[0-9xX]$/;break;

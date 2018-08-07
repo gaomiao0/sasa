@@ -1,0 +1,261 @@
+a{
+	font-size: 12px;
+}
+input{
+	vertical-align: middle;
+}
+.public{
+	width: 100%;
+}
+.content{
+	height:100%;
+	background:#ebebeb;
+}
+.bigbox1{
+	width:1090px;
+	margin:0 auto;
+}
+.clearfix:after{
+	content:"";
+	height:0;
+	display: block;
+	overflow: hidden;
+	clear: both;
+	visibility: hidden;
+}
+.head_main .logoimg{
+	float: left;
+}
+.head_main_cen{
+	width: 472px;
+    height: 62px;
+    float: left;
+    margin: 20px 0 0 170px;
+    background: url(../imgs/cartstep.png) no-repeat;
+    overflow: hidden;
+    background-position: 0 0;
+}
+.topcarti{
+	float:right;
+	line-height:95px;
+	margin-right:100px;
+}
+.topcarti img {
+    max-width: 235px;
+    max-height: 62px;
+}
+.container{
+	width:985px;
+	margin:0 auto;
+	padding-top:20px;
+}
+.tips{
+	height: 30px;
+    background-color: #ffab2e;
+    color: #fff;
+    padding-left: 14px;
+    line-height: 30px;
+    font-size: 12px;
+}
+.carbg{
+	margin:20px 0 0;
+	height:38px;
+	background:url(../imgs/home-bt.png) no-repeat;
+	background-position: 0 -845px;
+}
+.manjian{
+	text-align: right;
+	padding-top: 20px;
+	padding-bottom: 10px;
+	color:#666;
+	font-size: 14px;
+}
+.carpro_list{
+	
+}
+.carpro_list dl{
+	margin-bottom: 20px;
+}
+.carpro_list .navtit{
+	color: #666666;
+    font-size: 14px;
+    height:37px;
+    line-height: 37px;
+    background: #fff;
+    border-left:3px solid #E93B78;
+    padding-left:10px;
+    }
+.td_left{
+	float:left;
+	
+}
+.carpro_list .navtit .td_left .nametit{
+	margin-left:100px;
+}
+.td_right{
+	float: right;
+	padding-right:100px;
+}
+.carpro_list .navtit span{
+	color: #666666;
+    font-size: 14px;
+    margin:0 10px;
+}
+.carpro_list .navtit .td_right span{
+	margin:0 35px;
+}
+.carpro_list dl dd{
+	margin-top:1px;
+	background:#fff;
+	font-size:14px;
+	color:#666;
+	padding-left:13px;
+	height:133px;
+	/*line-height:133px;*/
+}
+.pro_info{
+	float: left;
+}
+.pro_info img{
+	padding:16px 0;
+	max-width: 90px;
+	max-height:100px;
+	margin-left:20px;
+}
+.pro_name{
+	max-width: 345px;
+	height:83px;
+	float: right;
+	font-size: 14px;
+	color:#666;
+	padding:25px 0;
+	margin-left:70px;
+}
+.pro_name p{
+	max-width: 345px;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+.pro_name p b{
+	display: inline-block;
+	padding:1px 4px;
+	margin-right: 6px;
+    background-color: #c69a62;
+    color: #ffffff;
+    
+}
+.pro_name a{
+	font-size:14px;
+	color:#666;
+}
+.guige{
+	color:#b2b2b2;
+	padding:10px 0px;
+}
+.pro_shop_info{
+	float: right;
+	margin-right:22px;
+}
+.pro_shop_info ul li{
+	float: left;
+	font-size: 14px;
+	color:#666;
+	padding-top:25px;
+	height:108px;
+	margin:0 20px;
+}
+.pro_shop_info ul .singlepri{
+	margin-right:38px;
+}
+.pro_shop_info ul .add_and_sub{
+	margin-left:5px;
+}
+.pro_shop_info ul li .zengjian a{
+	font-size: 14px;
+	color:#666;
+	display: inline-block;
+	width: 20px;
+    height: 21px;
+    overflow: hidden;
+    background: #f4f6f5;
+	text-align: center;
+	line-height: 21px;
+	vertical-align: middle;
+	float: left;
+	cursor: pointer;
+	
+}
+.pro_shop_info ul li .zengjian a:hover{
+	background: #E9E9E9;
+}
+.zengjian input{
+	width: 30px;
+    height: 19px;
+    line-height: 19px;
+	text-align: center;
+	line-height: 30px;
+	background:#fff;
+	vertical-align: middle;
+	outline: none;
+	float: left;
+	border:1px solid #E9E9E9;
+	box-shadow: 1px 1px 1px #E9E9E9;
+}
+.remain{
+	color:#EB4180;
+	margin-top:5px;
+}
+.pro_shop_info ul .paymoney{
+	/*width:51px;*/
+	margin-right:16px;
+	/*word-wrap: break-word;*/
+}
+.paymoney span{
+	color:#EB4180;
+}
+.paymoney .baoshui{
+	font-size: 10px;
+	color:#B2B2B2;
+	margin-top:5px;
+}
+.delete{
+	font-size: 14px;
+	color:#B2B2B2;
+}
+.carpro_list .lastpay{
+	margin:20px 0;
+	border:none;
+}
+.carpro_list .lastpay .td_left .nametit{
+	padding:0;
+	margin:0;
+}
+.continue_shop{
+	margin:0 10px;
+}
+.carpro_list .lastpay .td_right{
+	padding:0;
+	margin: 0;
+}
+.carpro_list .lastpay .td_right b{
+	color:#DB3F7E;
+}
+.carpro_list .lastpay .td_right .totalpay{
+	font-size: 16px;
+	color:#DB3F7E;
+	font-weight:600;
+}
+.carpro_list .lastpay .td_right .totalpay b{
+	font-weight: 600;
+}
+.carpro_list .lastpay .td_right .pay_btn{
+	display: inline-block;
+	width:130px;
+	height: 38px;
+	line-height: 38px;
+	font-size: 16px;
+	color:#fff;
+	text-align: center;
+	background: #DB3F7E;
+}

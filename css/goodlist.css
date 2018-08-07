@@ -1,5 +1,14 @@
 a{
-	font-size: 12px;
+	/*font-size: 12px;*/
+	color: #3e3e3e;
+}
+.clearfix:after{
+	content:"";
+	display: block;
+	height:0;
+	overflow: hidden;
+	clear: both;
+	visibility: hidden;
 }
 .public{
 	width: 100%;
@@ -7,7 +16,43 @@ a{
 .public_header{
 	/*overflow: hidden;*/
 }
-.bigbox{
-	width: 1200px;
+.bigbox1{
+	width: 1090px;
 	margin:0 auto;
+}
+.content{
+	width:100%;
+	background: #ECECEE;
+}
+.banner{
+	margin-bottom:30px;
+	height:450px;
+	width:100%;
+	background: url(../imgs/fab30fe2c3a78a9b4ec3103e7db19702a0e5da0a.jpg) no-repeat center top;
+}
+.list_tit{
+	margin-bottom: 20px;
+}
+.list_tit img{
+	width:1090px;
+}
+.list{
+	width: 1150px;
+    padding: 5px 0 30px 0;
+    margin-left: -29px;
+}
+.list ul li{
+	width: 253px;
+    height: 485px;
+    float: left;
+    margin: 0 0 25px 26px;
+    background:#fff;
+}
+.pro_li_in{
+    width: 253px;
+    height: 482px;
+    background: #fff;
+    position: absolute;
+    left: 0;
+    top: 0;
 }

@@ -73,7 +73,7 @@ h1,h2,h3,h4,h5,h6,b{
 .single_tit p{
 	float:right;
 	font-size: 12px;
-	
+
 }
 .single_tit p a{
 	color: #ec3e7d;
@@ -84,7 +84,7 @@ h1,h2,h3,h4,h5,h6,b{
 }
 .signupbox p{
 	margin:0 5px;
-	/*display: none;*/
+	display: none;
 }
 .signupbox span{
 	line-height: 20px;
@@ -107,7 +107,7 @@ h1,h2,h3,h4,h5,h6,b{
     line-height:14px;
 }
 .signupbox input{
-	width:336px;
+	width:318px;
 	height:24px;
 	outline: none;
 	border:1px solid #ccc;
