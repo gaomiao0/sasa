@@ -35,7 +35,7 @@ gulp.task("copyphp",function(){
 });
 //复制图片文件
 gulp.task("copyimgs",function(){
-	gulp.src("imgs/*.{jpg,png,bmp}")
+	gulp.src("imgs/*.{jpg,png,bmp,gif}")
 	.pipe(gulp.dest("D:\\phpStudy\\WWW\\sasa\\imgs"));
 });
 gulp.task("copyjs",function(){
@@ -67,7 +67,7 @@ gulp.task("babel",function(){
 //启动监听器
 gulp.task("watch",function(){
 	gulp.watch("*.html",["copyfile"]);
-	gulp.watch("imgs/*.{jpg,png,bmp}",["copyimgs"]);
+	gulp.watch("imgs/*.{jpg,png,bmp,gif}",["copyimgs"]);
 	gulp.watch("big/*.{jpg,png,bmp}",["copybig"]);
 	gulp.watch("mid/*.{jpg,png,bmp}",["copymid"]);
 	gulp.watch("images/*.{jpg,png,bmp}",["copyimages"]);

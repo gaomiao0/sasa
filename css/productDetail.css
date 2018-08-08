@@ -602,15 +602,14 @@ a{
 }
 .prode_right{
 	width:920px;
-	/*background: #fff;*/
+	position: relative;
 	height:100%;
 	float:right;
 }
 .nav-height{
-	height:100%;
-	position:relative;
 	margin-bottom: 20px;
 	background: #fff;
+	-webkit-transform:translate3d(0,0,0).  
 }
 .nav-height:after{
 	content:"";

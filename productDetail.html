@@ -261,16 +261,14 @@ VIP单笔消费满599，系统自动返赠一张<999-100>优惠券。使用有�
 				</ul>
 			</div>
 		</div>
-		<script type="text/javascript" src="js/jquery-1.js"></script>
-		<script type="text/javascript" src="js/nav.js"></script>
 		<div class="prode_right">
 			<div class="nav-height" id="navHeight">
 				<div class="nav-wrap" id="nav-wrap">
 					<div class="nav-mobile">Click</div>
 					<ul class="clearfix">
-						<li><b>商品参数</b></li>
-						<li><b>商品详情</b></li>
-						<li><b>用户评价</b></li>
+						<li id="div1Link"><b>商品参数</b></li>
+						<li id="div2Link"><b>商品详情</b></li>
+						<li id="div3Link"><b>用户评价</b></li>
 					</ul>
 				</div>
 				<div class="tag_right">
@@ -408,38 +406,6 @@ VIP单笔消费满599，系统自动返赠一张<999-100>优惠券。使用有�
 		 		</div>
 		 	</div>
 		</div>
-		
-		<script>
-		//内容信息导航吸顶
-			$(document).ready(function(){ 
-			var navHeight= $("#navHeight").offset().top; 
-			var navFix=$("#nav-wrap"); 
-			$(window).scroll(function(){ 
-				if($(this).scrollTop()>navHeight){ 
-					navFix.addClass("navFix"); 
-				} 
-				else{ 
-					navFix.removeClass("navFix"); 
-				} 
-				}) 
-			})
-		//内容信息导航锚点
-		   $('.nav-wrap').navScroll({
-		      mobileDropdown: true,
-		      mobileBreakpoint: 768,
-		      scrollSpy: true
-		    });
-		
-		    $('.click-me').navScroll({
-		      navHeight: 0
-		    });
-		
-		    $('.nav-wrap').on('click', '.nav-mobile', function (e) {
-		      e.preventDefault();
-		      $('.nav-wrap ul').slideToggle('fast');
-		    });
-		</script>
-
 	</div>
 </div>
 </div>

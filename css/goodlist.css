@@ -47,12 +47,220 @@ a{
     float: left;
     margin: 0 0 25px 26px;
     background:#fff;
+    position:relative;
+    transition: all .3s;
 }
-.pro_li_in{
+.list ul li:hover{
+	z-index:100;
+}
+
+.list .goods_li_in{
     width: 253px;
     height: 482px;
     background: #fff;
     position: absolute;
     left: 0;
-    top: 0;
+    top: 0; 
+    transition: all .3s;
+}
+
+.list li:hover .goods_li_in{
+	width:337px;
+	height:520px;
+	box-shadow: 0 1px 30px #d1cfcd;
+}
+.country{
+	position:absolute;
+	top:5px;
+	right:8px;
+	z-index: 100;
+}
+.country img{
+	vertical-align: middle;
+	max-height:20px ;
+	max-width: 20px;
+}
+.country span{
+	font-size: 14px;
+	color:#888;
+}
+.list .topbox{
+	background:#ECECEE;
+}
+.list dl{
+	position: relative;
+	/*background: #fff;*/
+}
+.list dl dd{
+	/*padding:2px;*/
+	/*background: #fff;*/
+}
+.list dl .show .b_img{
+	z-index:100;
+}
+.list dl .b_img{
+	position:absolute;
+	top:0;
+	left:0;
+}
+.list dl .s_img{
+	width:76px;
+	height:76px;
+	display: inline-block;
+	margin-left:169px;
+	border:4px solid transparent;
+	background: #fff;
+	z-index:300;
+	transition: all .3s;
+}
+.list ul li:hover .s_img{
+	margin-left:253px
+}
+.list dl .s_img:hover{
+	border-color: #c69a62;
+}
+.list dl .s_img img{
+	max-height: 76px;
+	max-width: 76px;
+}
+.list dl .b_img img{
+    width: 252px;
+    height: 252px;
+    margin: 0 auto;
+    display: block;
+}
+.list .cenbox{
+	border-bottom: 1px solid #eee;
+    border-top: 1px solid #eee;
+    padding: 10px 15px;
+    color: #858587;    
+}
+.cenbox .price{
+	float: left;
+	font-size: 24px;
+	color:#EC3E7C;
+	background: #fff;
+}
+.cenbox .price .oldprice{
+	font-size: 14px;
+	color:#666666;
+	position:relative;
+	margin-left: 6px;
+}
+.oldprice:after{
+	content:"";
+	display: block;
+	width:100%;
+	height:1px;
+	position: absolute;
+	left: 0;
+	top:10px;
+	background:#666;
+	
+}
+.cenbox .zhekou{
+	float: right;
+	color: #c69a62;
+    margin-top: 6px;
+    font-size: 14px;
+    background: #fff;
+}
+.list .botbox{
+	padding: 12px 15px;
+    overflow: hidden;
+    font-size: 12px;
+    background: #fff;
+    margin-bottom: 40px;
+}
+.botbox p{
+	height: 20px;
+    overflow: hidden;
+    white-space: nowrap;
+    padding: 0;
+    line-height: 20px;
+    font-size: 13px;
+    text-overflow: ellipsis;
+    /*font-weight: bold;*/
+}
+.botbox p .songda{
+	color: #ee9c23;
+	font-weight: 600;
+}
+.botbox .des{
+	overflow: hidden;
+    line-height: 20px;
+    font-size: 13px;
+    height: 30px;
+}
+.botbox .guige{
+	font-size: 14px;
+}
+.list .addcar{
+/*	margin-top:40px;*/
+	padding:18px 15px;
+    background: #fff;
+	transition: all .3s;
+	/*transform: rotateX(-500px);*/
+	margin-left:-500px;
+	display:none;
+}
+.list .addcar a{
+	display: block;
+	width:224px;
+	height:43px;
+	font-size: 16px;
+	margin:0 auto;
+	color:#fff;
+	text-align: center;
+	line-height: 43px;
+	background:#EC3E7C;
+}
+
+.list ul li:hover .addcar{
+	display:block;
+	margin: 0;
+	transform: rotateX(500px);
+}
+.list .goods_right_li{
+	right:0;
+}
+.list .goods_right_li .addcar{
+	margin-right:500px;	
+}
+.list .goods_right_li{
+    width: 253px;
+    height: 482px;
+    background: #fff;
+    position: absolute;
+    right: 0;
+    top: 0; 
+    transition: all .3s;
+}
+.list .goods_right_li .topbox dl{
+	position:relative;
+}
+.list .goods_right_li .topbox dl .b_img{
+	position:absolute;
+	right:0;
+	top:0;
+	transition: all .1s;
+}
+.list .goods_right_li .topbox dl .b_img img{
+	position:absolute;
+	right:0;
+	top:0;
+}
+.list .right_li:hover .goods_right_li .addcar{
+	display:block;
+	margin: 0;
+	transform: rotateX(-500px);
+}
+.list .right_li:hover .goods_right_li{
+	width:337px;
+	height:520px;
+	box-shadow: 0 1px 30px #d1cfcd;
+}
+.list ul .right_li:hover .s_img{
+	margin-left:0px;
+	/*z-index:300;*/
 }
