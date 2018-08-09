@@ -1420,7 +1420,7 @@ li .brand{
 .left_cb ul li:hover{
 	background: #EC3F7E;
 }
-.scro_li_change{
+.left_cb ul .scro_li_change{
 	background: #EC3F7E;
 }
 .left_cb ul li:hover i{

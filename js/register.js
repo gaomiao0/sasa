@@ -71,10 +71,16 @@ $(function(){
 	$("#userpass").focusout(function(){
 		if($(this).val().length ==""){
 			$(this).siblings().fadeIn();
+			$(".strength").fadeOut();
 		}else{
 			$(this).siblings().fadeOut();
 			$(this).css({"border":"1px solid #4AD150"});
+			$(".strength").fadeIn();
 		}
+	})
+	$("#userpass").focusin(function(){
+		if($(this).val().length ==""){
+			$(".strength").fadeOut();
 	})
 	$("#userpass").keyup(function(){		
 //		if($(this).val().length >=1){

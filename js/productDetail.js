@@ -38,51 +38,60 @@ $(function(){
   //加个屏幕滚动事件，c是滚动条相当于文档最顶端的距离
 
 //  信息点击导航
-	$(".clearfix li").click(function(){
+	$(".clearfix li").on("click",function(){
 		let w = $(this).width()
 		let index=$(this).index()
 		$(".nav_line").animate({
 			"left":w*index+10+"px"
 		},200)
 	})
-	
+//	吸顶锚点导航
+    $(document).scroll(function(){
+  //当滚动的屏幕距离大于等于导航栏本身离最顶端的距离时（判断条件）给它加样式（根据自己业务的条件加样式，一般如下）*／
+      	if($(document).scrollTop()>$('.prode_right').offset().top){
+        	$('.nav-height').css({position:'fixed',top:'0'})
+        }else{
+    	 	$('.nav-height').css({'position':'relative',"top":"0"})
+        }
+        
+        /*let w = $(".clearfix li").width()
+		if($("html,body").scrollTop()>$("#section1").offset().top-70 && $("html,body").scrollTop()<$("#section2").offset().top-70){
+			$(".nav_line").animate({
+			"left":w+10+"px"
+			},200)
+			
+		}else if($("html,body").scrollTop()>=$("#section2").offset().top-70 && $("html,body").scrollTop()<$("#section3").offset().top-70){
+			$(".nav_line").animate({
+			"left":w*1+10+"px"
+			},200)
+		}else if($("html,body").scrollTop()>$("#section3").offset().top-70){
+			$(".nav_line").animate({
+			"left":w*2+10+"px"
+			},200)
+		}*/
+		
+    })
+    
 	$("#div1Link").click(function() {
 		console.log($(this).offset().top)
     $("html, body").animate({
-        scrollTop: $("#section1").offset().top }, );
+        scrollTop: $("#section1").offset().top-70 }, );
     	return false;
     });
     $("#div2Link").click(function() {
 		console.log($(this).offset().top)
         $("html, body").animate({
-            scrollTop: $("#section2").offset().top });
+            scrollTop: $("#section2").offset().top-70 });
        		return false;
     });
     $("#div3Link").click(function() {
     	console.log($(this).offset().top)
         $("html, body").animate({
-            scrollTop: $("#section3").offset().top });
+            scrollTop: $("#section3").offset().top-70 });
         	return false;
     });
 
-//	window.onscroll = function(){
-//		if(0<=$("html,body").scrollTop() && $("html,body").scrollTop() <849){
-//			$("#div1Link").addClass("isActive").siblings().removeClass("isActive")
-//		}else if(849 <= $("html,body").scrollTop() && $("html,body").scrollTop() <=1600){
-//			$("#div2Link").addClass("isActive").siblings().removeClass("isActive")
-//		}else{
-//			$("#div3Link").addClass("isActive").siblings().removeClass("isActive")
-//		}
-//	}
-
-    $(document).scroll(function(){
-      
-  //当滚动的屏幕距离大于等于导航栏本身离最顶端的距离时（判断条件）给它加样式（根据自己业务的条件加样式，一般如下）*／
-      if($(document).scrollTop()>$('.nav-height').offset().top){
-        $('.nav-height').css({position:'fixed',top:'0px'})
-        }else{
-    	 $('.nav-height').css({'position':'static'})
-        }
-     })
+	
+		
     
 })

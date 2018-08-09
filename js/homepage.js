@@ -71,17 +71,22 @@ $(function(){
 			if($('body,html').scrollTop()>=1003 && $('body,html').scrollTop()<5266){
 				$(".left_cb").fadeIn(200)
 //				侧边跟随变色
-//				if(top1>1003 && top1<2159){
-//					$(".oneli").addClass("scro_li_change")
-//				}else if(top1>=2159 && top1<=4563){
-//					$(".twoli").addClass("scro_li_change")
-//				}else if(top1>4563 && top1<5216){
-//					$(".threeli").addClass("scro_li_change")
-//				}else{
-//					$(".fourli").addClass("scro_li_change")
-//				}
+				let a = $("#bikan").offset().top;
+				let b = $("#temai").offset().top;
+				let c = $("#paihang").offset().top;
+				let d = $("#xinpin").offset().top
+				if(top1>a && top1<b){
+					$(".oneli").addClass("scro_li_change").siblings().removeClass("scro_li_change")
+					
+				}else if(top1>=b && top1<=c){
+					$(".twoli").addClass("scro_li_change").siblings().removeClass("scro_li_change")
+				}else if(top1>c && top1<d){
+					$(".threeli").addClass("scro_li_change").siblings().removeClass("scro_li_change")
+				}else if(top1>d && top1<5000){
+					$(".fourli").addClass("scro_li_change").siblings().removeClass("scro_li_change")
+				}
 				
-			}else if($('body,html').scrollTop()>=5266 || $('body,html').scrollTop()<1003){
+			}else if($('body,html').scrollTop()>=5600 || $('body,html').scrollTop()<1003){
 				$(".left_cb").fadeOut(200)
 			}
 		})
@@ -103,17 +108,7 @@ $(function(){
 			    // 如果需要滚动条
 			//  scrollbar: '.swiper-scrollbar',
 			  })
-		//公告
-		/*function gonggaosilde(){
-			var top1=0;
-			var Timer = setInterval(function(){
-				top1-=28;
-				if(top1<-112){
-					top1 = 0
-				}
-				$(".ol")[0].style.top = top1+"px"
-			},1000)
-		};*/
+		//公告		
 		function gonggaosilde(){
 			let i=0;
 			let Timer = setInterval(function(){
@@ -124,7 +119,6 @@ $(function(){
 					})
 					i = 0
 				}
-			
 				$(".ol").animate({
 					"top":28*i+"px"
 				},2000)
@@ -133,7 +127,7 @@ $(function(){
 		gonggaosilde();
 //		倒计时
 	function GetRTime(){
-       var EndTime= new Date('2018/08/8 09:00:00');//这里设置你预定的时间
+       var EndTime= new Date('2018/08/13 09:00:00');//这里设置你预定的时间
        var NowTime = new Date();
        var t =EndTime.getTime() - NowTime.getTime();
        
@@ -161,4 +155,46 @@ $(function(){
 	},function(){
 		
 	})
+//	左侧边点击锚点滑动
+	$(".oneli").click(function() {
+		console.log($(this).offset().top)
+    $("html, body").animate({
+        scrollTop: $("#bikan").offset().top }, );
+    	return false;
+    });
+    $(".twoli").click(function() {
+		console.log($(this).offset().top)
+        $("html, body").animate({
+            scrollTop: $("#temai").offset().top });
+       		return false;
+    });
+    $(".threeli").click(function() {
+		console.log($(this).offset().top)
+        $("html, body").animate({
+            scrollTop: $("#paihang").offset().top });
+       		return false;
+    });
+    $(".fourli").click(function() {
+    	console.log($(this).offset().top)
+        $("html, body").animate({
+            scrollTop: $("#xinpin").offset().top });
+        	return false;
+    });
+    
+    
+     	/*let w = $(".clearfix li").width()
+		if($("html,body").scrollTop()>$("#section1").offset().top-70 && $("html,body").scrollTop()<$("#section2").offset().top-70){
+			$(".nav_line").animate({
+			"left":w+10+"px"
+			},200)
+			
+		}else if($("html,body").scrollTop()>=$("#section2").offset().top-70 && $("html,body").scrollTop()<$("#section3").offset().top-70){
+			$(".nav_line").animate({
+			"left":w*1+10+"px"
+			},200)
+		}else if($("html,body").scrollTop()>$("#section3").offset().top-70){
+			$(".nav_line").animate({
+			"left":w*2+10+"px"
+			},200)
+		}*/
 })
